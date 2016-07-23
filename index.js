@@ -1,15 +1,15 @@
-function showText(target, message, index, interval, waitTime) {   
+function showText(target, message, index, interval, delay) {   
   if (index < message.length) {
-    if (message[index] == '^'){
+    if (message[index] == '^') {
       $(target).append('<br/>');
     } else {
       $(target).append(message[index]);
     }
-    
+
     index++;
     setTimeout(function () {
-      showText(target, message, index, interval, waitTime);
-    }, (index % getRandom() == 0 ? waitTime : interval));
+      showText(target, message, index, interval, delay);
+    }, (index % getRandom() == 0 ? delay : interval));
   }
 }
 
