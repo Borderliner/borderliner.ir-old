@@ -3,6 +3,7 @@ body {
   color: #FFF;
   font-family: Courier;
   font-size: 1rem;
+  line-height: 25px;
 }
 
 .container {
@@ -18,6 +19,10 @@ body {
 
 .pc-name {
   color: #0588ff;
+}
+
+.body {
+  color: #a9a9a9;
 }
 
 @media (max-width: 768px) {
