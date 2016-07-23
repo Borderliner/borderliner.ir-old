@@ -2,38 +2,70 @@ body {
   background-color: #000;
   color: #FFF;
   font-family: Courier;
-  font-size: 1rem;
+  font-size: 1.2vw;
   line-height: 25px;
 }
 
 .container {
-  width: 50%;
+  width: 67%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 100px;
 }
 
+.terminal-text {
+  padding-top: 20px;
+  padding-left: 12px;
+}
+
 .username {
-  color: red;
+  color: #a100ff;
 }
 
 .pc-name {
-  color: #0588ff;
+  color: #05efff;
 }
 
 .body {
   color: #a9a9a9;
 }
 
+.terminal-title {
+  position: relative;
+  left: 40%;
+  color: grey;
+  font-size: 0.8rem;
+  font-family: sans;
+}
+
+.terminal {
+  background-image: url('terminal.png');
+  height: auto;
+  min-height: 600px;
+  background-size: cover;
+}
+
+.cursor {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0.0; }
+}
+
 @media (max-width: 768px) {
   .container {
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 75px;
   }
 
   body {
     font-size: 0.85rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 960px) {
+  .container {
+    width: 80%;
   }
 }
