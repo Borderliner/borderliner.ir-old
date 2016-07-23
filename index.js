@@ -1,6 +1,11 @@
 function showText(target, message, index, interval, waitTime) {   
   if (index < message.length) {
-    $(target).append(message[index]);
+    if (message[index] == '^'){
+      $(target).append('<br/>');
+    } else {
+      $(target).append(message[index]);
+    }
+    
     index++;
     setTimeout(function () {
       showText(target, message, index, interval, waitTime);
