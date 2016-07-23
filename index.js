@@ -1,12 +1,19 @@
-function showText(target, message, index, interval) {   
+function showText(target, message, index, interval, waitTime) {   
   if (index < message.length) {
-    $(target).append(message[index++]);
-    setTimeout(function () { showText(target, message, index, interval); }, interval);
+    $(target).append(message[index]);
+    index++;
+    setTimeout(function () {
+      showText(target, message, index, interval, waitTime);
+    }, (index % getRandom() == 0 ? waitTime : interval));
   }
+}
+
+function getRandom() {
+  return (Math.floor(Math.random() * 20) + 1) + 50;
 }
 
 function readText(file) {
   $.get(file, function(data) {
-    showText('#body', data, 0, 500);
+    showText('#body', data, 0, 30, 750);
   });
 }
