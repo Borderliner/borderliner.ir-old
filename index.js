@@ -18,7 +18,20 @@ function getRandom() {
 }
 
 function readText(file) {
-  $.get(file, function(data) {
-    showText('#body', data, 0, 30, 750);
+  $.ajax({
+    url: 'ip.php',
+    dataType: 'json',
+    success: function(user_data) {
+      $.get(file, function(file_text) {
+        file_text =file_text.replace('[IP]', user_data.ip);
+        showText('#body', file_text, 0, 30, 750);
+      });
+    },
+    error: function() {
+      $.get(file, function(file_text) {
+        file_text =file_text.replace('[IP]', 'dear visitor');
+        showText('#body', file_text, 0, 30, 750);
+      });
+    }
   });
 }
