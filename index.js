@@ -15,5 +15,3 @@ function readTextFile(file)
     }
     rawFile.send(null);
 }
-
-document.getElementById('body').innerHTML = readTextFile('http://borderliner.ir/index.txt');
