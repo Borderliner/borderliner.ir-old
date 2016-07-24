@@ -2,7 +2,7 @@ cat hajianpour.txt^^
 
 Hello, [IP]! My name is Mohammad Reza Hajianpour, a pretty damn long name, but you can call me "Reza"!
 ^
-I'm an Computer Engineering B.Sc. alumni from Azad University of Zanjan. I'm a Full-Stack JavaScript and Web Developer, and also a Linux & FreeBSD freak. I spend most of my time coding and learning, and I play guitar in my free time. I'm a techie, a nerd, and I love everything new and I won't hesitate to try new things, that's why I'm one of the first guys who tries new Linux distros and experiences every web framework out there! By now, my current favorite technologies are:^
+I'm a Computer Engineering B.Sc. alumni from Azad University of Zanjan. I'm a Full-Stack JavaScript and Web Developer, and also a Linux & FreeBSD freak. I spend most of my time coding and learning, and I play guitar in my free time. I'm a techie, a nerd, and I love everything new and I won't hesitate to try new things, that's why I'm one of the first guys who tries new Linux distros and experiences every web framework out there! By now, my current favorite technologies are:^
 - React^
 - Meteor^
 - Arch Linux^
